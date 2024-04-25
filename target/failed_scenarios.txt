@@ -1,0 +1,13 @@
+file:src/test/java/features/College10_Admin.feature:16:21:52:56
+file:src/test/java/features/College8_Student.feature:6:18:25:31:37:50
+file:src/test/java/features/College12_Exam.feature:16:31:36:46:56:61
+file:src/test/java/features/College3_Faculty.feature:17:30:36
+file:src/test/java/features/College9_Announcement.feature:6
+file:src/test/java/features/College11_Support.feature:17:22:27:32
+file:src/test/java/features/College_HomePage.feature:14:19:29
+file:src/test/java/features/College2_Branch1.feature:15:20
+file:src/test/java/features/College7_Secyion.feature:30:37
+file:src/test/java/features/College6_Course.feature:30:47
+file:src/test/java/features/College5_Academic.feature:17:23:29:39:43
+file:src/test/java/features/College1_Branch.feature:18:38:39:41
+file:src/test/java/features/College4_Subject.feature:12:18

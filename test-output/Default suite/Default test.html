@@ -1,0 +1,1267 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>70/43/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Apr 22 18:46:10 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>1192 seconds (1192026 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the date why it shows null", "College - Faculty Module"</td>
+<td><div><pre>java.lang.Exception: DateMandatoryFieldDidn&apos;tWork
+	at stepDefinitions.FacultyModule.check_how_it_behaves(FacultyModule.java:133)
+	at ✽.Check how it behaves.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College3_Faculty.feature:22)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1140362426", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1140362426'><pre>java.lang.Exception: DateMandatoryFieldDidn&apos;tWork
+	at stepDefinitions.FacultyModule.check_how_it_behaves(FacultyModule.java:133)
+	at ✽.Check how it behaves.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College3_Faculty.feature:22)
+</pre></div></td>
+<td>18</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Without enter anything click submit and add button in admin", "College - Admin Module"</td>
+<td><div><pre>java.lang.AssertionError: expected [Enter all details] but found [please upload your Profile picture]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.AdminModule.check_how_it_behave_in_admin_page_whether_it_shows_error_message_or_not(AdminModule.java:111)
+	at ✽.Check how it behave in admin page whether it shows error message or not.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College10_Admin.feature:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace901751227", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace901751227'><pre>java.lang.AssertionError: expected [Enter all details] but found [please upload your Profile picture]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.AdminModule.check_how_it_behave_in_admin_page_whether_it_shows_error_message_or_not(AdminModule.java:111)
+	at ✽.Check how it behave in admin page whether it shows error message or not.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College10_Admin.feature:19)
+</pre></div></td>
+<td>16</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario - Working days Fields", "Academic Modules"</td>
+<td><div><pre>java.lang.Exception: Negative Value Accept in working days Fields
+	at stepDefinitions.AcademicModule.if_it_allows_throw_error(AcademicModule.java:142)
+	at ✽.If it allows throw error.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College5_Academic.feature:27)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1996939010", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1996939010'><pre>java.lang.Exception: Negative Value Accept in working days Fields
+	at stepDefinitions.AcademicModule.if_it_allows_throw_error(AcademicModule.java:142)
+	at ✽.If it allows throw error.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College5_Academic.feature:27)
+</pre></div></td>
+<td>22</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enter a value in dob and check how it behaves", "College - Student Module"</td>
+<td><div><pre>java.lang.Exception: Date Validation Didn&apos;t Work
+	at stepDefinitions.StudentModule.check_the_values_present_in_student_page_or_not(StudentModule.java:232)
+	at ✽.Check the values present in student page or not.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College8_Student.feature:41)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2034571520", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2034571520'><pre>java.lang.Exception: Date Validation Didn&apos;t Work
+	at stepDefinitions.StudentModule.check_the_values_present_in_student_page_or_not(StudentModule.java:232)
+	at ✽.Check the values present in student page or not.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College8_Student.feature:41)
+</pre></div></td>
+<td>20</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete some course", "Course Module"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=124.0.6367.61)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [faf1093c42c805a6ddc8b591d42319fc, getElementText {id=f.BFC2DE6B5F9F94C0884FE19AC8F297C8.d.822C6044D0BB6264BF1DD4D6406BF827.e.88}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\dinesh\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52415}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52415/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (faf1093c42c805a6ddc8b591d42319fc)] -&gt; xpath: //div[@id=&apos;cell-3-undefined&apos;]/div]
+Session ID: faf1093c42c805a6ddc8b591d42319fc
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
+	at stepDefinitions.CourseModule.check_deleted_data_is_showing_or_not(CourseModule.java:202)
+	at ✽.Check deleted data is showing or not.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College6_Course.feature:50)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2127813013", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2127813013'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=124.0.6367.61)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [faf1093c42c805a6ddc8b591d42319fc, getElementText {id=f.BFC2DE6B5F9F94C0884FE19AC8F297C8.d.822C6044D0BB6264BF1DD4D6406BF827.e.88}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\dinesh\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52415}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52415/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (faf1093c42c805a6ddc8b591d42319fc)] -&gt; xpath: //div[@id=&apos;cell-3-undefined&apos;]/div]
+Session ID: faf1093c42c805a6ddc8b591d42319fc
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
+	at stepDefinitions.CourseModule.check_deleted_data_is_showing_or_not(CourseModule.java:202)
+	at ✽.Check deleted data is showing or not.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College6_Course.feature:50)
+</pre></div></td>
+<td>5</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "NegativeScenario1 - Working days Fields", "Academic Modules"</td>
+<td><div><pre>java.lang.Exception: validtion Must
+	at stepDefinitions.AcademicModule.enter_some_invalid_data_in_working_fields(AcademicModule.java:194)
+	at ✽.Enter some invalid data in working fields.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College5_Academic.feature:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace859991301", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace859991301'><pre>java.lang.Exception: validtion Must
+	at stepDefinitions.AcademicModule.enter_some_invalid_data_in_working_fields(AcademicModule.java:194)
+	at ✽.Enter some invalid data in working fields.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College5_Academic.feature:31)
+</pre></div></td>
+<td>21</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Sceenario - Admin", "College - Admin Module"</td>
+<td><div><pre>java.lang.Exception: Permission Validation Must
+	at stepDefinitions.AdminModule.if_it_allow_it_s_bug(AdminModule.java:217)
+	at ✽.If it allow its bug.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College10_Admin.feature:60)
+</pre></div><a href='#' onClick='toggleBox("stack-trace648994982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace648994982'><pre>java.lang.Exception: Permission Validation Must
+	at stepDefinitions.AdminModule.if_it_allow_it_s_bug(AdminModule.java:217)
+	at ✽.If it allow its bug.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College10_Admin.feature:60)
+</pre></div></td>
+<td>13</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete some section", "College - Section Module"</td>
+<td><div><pre>java.lang.Exception: Deleted Not Successfuly
+	at stepDefinitions.SectionModule.check_deleted_data_is_showing_or_not_in_section_menu(SectionModule.java:250)
+	at ✽.Check deleted data is showing or not in section menu.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College7_Secyion.feature:63)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1225739079", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1225739079'><pre>java.lang.Exception: Deleted Not Successfuly
+	at stepDefinitions.SectionModule.check_deleted_data_is_showing_or_not_in_section_menu(SectionModule.java:250)
+	at ✽.Check deleted data is showing or not in section menu.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College7_Secyion.feature:63)
+</pre></div></td>
+<td>4</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Value in Student Fields", "College - Student Module"</td>
+<td><div><pre>java.lang.Exception: Validation Must in Email,Mobile No,Pincode
+	at stepDefinitions.StudentModule.enter_the_negative_values_in_email_mobile_no_pincode_etc(StudentModule.java:251)
+	at ✽.Enter the negative values in email,mobile no,pincode etc..(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College8_Student.feature:53)
+</pre></div><a href='#' onClick='toggleBox("stack-trace224840878", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace224840878'><pre>java.lang.Exception: Validation Must in Email,Mobile No,Pincode
+	at stepDefinitions.StudentModule.enter_the_negative_values_in_email_mobile_no_pincode_etc(StudentModule.java:251)
+	at ✽.Enter the negative values in email,mobile no,pincode etc..(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College8_Student.feature:53)
+</pre></div></td>
+<td>5</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click the edit institute icon and do some action", "HomePage Scenarios"</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1067)
+	at org.testng.Assert.assertEquals(Assert.java:1031)
+	at org.testng.Assert.assertEquals(Assert.java:1077)
+	at stepDefinitions.HomePageDefinitions.user_can_able_to_edit_the_password_and_email_fields(HomePageDefinitions.java:115)
+	at ✽.User can able to edit the  password and email fields(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College_HomePage.feature:16)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1538756478", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1538756478'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1067)
+	at org.testng.Assert.assertEquals(Assert.java:1031)
+	at org.testng.Assert.assertEquals(Assert.java:1077)
+	at stepDefinitions.HomePageDefinitions.user_can_able_to_edit_the_password_and_email_fields(HomePageDefinitions.java:115)
+	at ✽.User can able to edit the  password and email fields(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College_HomePage.feature:16)
+</pre></div></td>
+<td>5</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario2 - Fac ID can able to clear the data or not.", "College - Subject Module"</td>
+<td><div><pre>java.lang.Exception: FacID is possible to able to clear
+	at stepDefinitions.SubjectModule.user_can_able_to_clear_fac_id_or_not(SubjectModule.java:94)
+	at ✽.User can able to clear facID or not.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College4_Subject.feature:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1859652690", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1859652690'><pre>java.lang.Exception: FacID is possible to able to clear
+	at stepDefinitions.SubjectModule.user_can_able_to_clear_fac_id_or_not(SubjectModule.java:94)
+	at ✽.User can able to clear facID or not.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College4_Subject.feature:21)
+</pre></div></td>
+<td>7</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Scenario in Announcement Module", "College - Announcement Module"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;MuiButtonBase-root Mui-disabled MuiPickersDay-root Mui-disabled MuiPickersDay-dayWithMargin css-6exafu&quot; tabindex=&quot;-1&quot; type=&quot;button&quot; disabled=&quot;&quot; role=&quot;gridcell&quot; data-timestamp=&quot;1713378600000&quot; aria-colindex=&quot;5&quot; aria-selected=&quot;false&quot;&gt;...&lt;/button&gt; is not clickable at point (1086, 525). Other element would receive the click: &lt;div role=&quot;row&quot; class=&quot;MuiDayCalendar-weekContainer css-mvmu1r&quot; aria-rowindex=&quot;3&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=124.0.6367.61)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34732c34b9bee2bb8a68eb225747be06, clickElement {id=f.547230019A8CF5306C4F16C37D064514.d.2B848704C85E8DBE2DBC42D1A4223B33.e.128}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\dinesh\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53588}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53588/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (34732c34b9bee2bb8a68eb225747be06)] -&gt; xpath: /html/body/div[2]/div[2]/div/div/div/div[2]/div/div/div[2]/div/div[3]/button[5]]
+Session ID: 34732c34b9bee2bb8a68eb225747be06
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at stepDefinitions.AnnouncementModule.user_enter_the_all_credentials(AnnouncementModule.java:53)
+	at ✽.User enter the all credentials(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College9_Announcement.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace185347591", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace185347591'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;MuiButtonBase-root Mui-disabled MuiPickersDay-root Mui-disabled MuiPickersDay-dayWithMargin css-6exafu&quot; tabindex=&quot;-1&quot; type=&quot;button&quot; disabled=&quot;&quot; role=&quot;gridcell&quot; data-timestamp=&quot;1713378600000&quot; aria-colindex=&quot;5&quot; aria-selected=&quot;false&quot;&gt;...&lt;/button&gt; is not clickable at point (1086, 525). Other element would receive the click: &lt;div role=&quot;row&quot; class=&quot;MuiDayCalendar-weekContainer css-mvmu1r&quot; aria-rowindex=&quot;3&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=124.0.6367.61)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34732c34b9bee2bb8a68eb225747be06, clickElement {id=f.547230019A8CF5306C4F16C37D064514.d.2B848704C85E8DBE2DBC42D1A4223B33.e.128}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\dinesh\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53588}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53588/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (34732c34b9bee2bb8a68eb225747be06)] -&gt; xpath: /html/body/div[2]/div[2]/div/div/div/div[2]/div/div/div[2]/div/div[3]/button[5]]
+Session ID: 34732c34b9bee2bb8a68eb225747be06
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at stepDefinitions.AnnouncementModule.user_enter_the_all_credentials(AnnouncementModule.java:53)
+	at ✽.User enter the all credentials(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College9_Announcement.feature:8)
+</pre></div></td>
+<td>8</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario1 in mark fields.", "College - Exam"</td>
+<td><div><pre>java.lang.Exception: Dont allow negative values in mark fiels
+	at stepDefinitions.ExamModule.check_the_error_message_shows_or_not_related_to_mark_in_exam_module(ExamModule.java:314)
+	at ✽.Check the error message shows or not related to mark in exam module.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College12_Exam.feature:59)
+</pre></div><a href='#' onClick='toggleBox("stack-trace216971106", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace216971106'><pre>java.lang.Exception: Dont allow negative values in mark fiels
+	at stepDefinitions.ExamModule.check_the_error_message_shows_or_not_related_to_mark_in_exam_module(ExamModule.java:314)
+	at ✽.Check the error message shows or not related to mark in exam module.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College12_Exam.feature:59)
+</pre></div></td>
+<td>8</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enter the mandatory fields in support page", "College - Support Module"</td>
+<td><div><pre>java.lang.Exception: Error message didn&apos;t throw in support page
+	at stepDefinitions.SupportModule.check_how_its_behave_in_support_page(SupportModule.java:112)
+	at ✽.Check how its behave in support page.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College11_Support.feature:25)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1055294327", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1055294327'><pre>java.lang.Exception: Error message didn&apos;t throw in support page
+	at stepDefinitions.SupportModule.check_how_its_behave_in_support_page(SupportModule.java:112)
+	at ✽.Check how its behave in support page.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College11_Support.feature:25)
+</pre></div></td>
+<td>13</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Irrelevant answer in answer fields and check how its behave", "College - Exam"</td>
+<td><div><pre>java.lang.Exception: Enter irrelevant answer how it provide marks
+	at stepDefinitions.ExamModule.if_its_allow_its_bug(ExamModule.java:342)
+	at ✽.If its allow its bug.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College12_Exam.feature:64)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1208711258", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1208711258'><pre>java.lang.Exception: Enter irrelevant answer how it provide marks
+	at stepDefinitions.ExamModule.if_its_allow_its_bug(ExamModule.java:342)
+	at ✽.If its allow its bug.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College12_Exam.feature:64)
+</pre></div></td>
+<td>8</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View the branch", "Branch Module"</td>
+<td><div><pre>java.lang.AssertionError: expected [iuvvs] but found [ga]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.BranchModule1.check1(BranchModule1.java:66)
+	at ✽.Check the value present in all fields.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College2_Branch1.feature:23)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1379128288", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1379128288'><pre>java.lang.AssertionError: expected [iuvvs] but found [ga]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.BranchModule1.check1(BranchModule1.java:66)
+	at ✽.Check the value present in all fields.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College2_Branch1.feature:23)
+</pre></div></td>
+<td>4</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View - Academic", "Academic Modules"</td>
+<td><div><pre>java.lang.Exception: Values didn&apos;t shows
+	at stepDefinitions.AcademicModule.check_all_the_values_present_or_not(AcademicModule.java:248)
+	at ✽.check all the values present or not.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College5_Academic.feature:45)
+</pre></div><a href='#' onClick='toggleBox("stack-trace825802350", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace825802350'><pre>java.lang.Exception: Values didn&apos;t shows
+	at stepDefinitions.AcademicModule.check_all_the_values_present_or_not(AcademicModule.java:248)
+	at ✽.check all the values present or not.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College5_Academic.feature:45)
+</pre></div></td>
+<td>4</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Scenario - Add two data simutaneously by using submit and add button.", "Branch Module"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=124.0.6367.61)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f556026a5996b2363f8140bb0913e400, clickElement {id=f.C0E64AD947F7FF20866C745F523CFD56.d.CD7FBF3D028BB7C7E9997D5F610F4B17.e.89}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\dinesh\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50661}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50661/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f556026a5996b2363f8140bb0913e400)] -&gt; xpath: /html/body/div/div/div[1]/div[2]/div[2]/div/form/div[1]/label/span/div]
+Session ID: f556026a5996b2363f8140bb0913e400
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at Modules.BranchFields.uploadImage(BranchFields.java:49)
+	at stepDefinitions.BranchModule.enter_the_all_credentials_like1(BranchModule.java:144)
+	at ✽.Enter the all credentials like &quot;afdd&quot; &quot;gds231&quot; &quot;fda@gamil.com&quot; &quot;89900&quot; &quot;78789&quot; &quot;12345&quot; &quot;iuhj&quot; &quot;jbnn&quot; &quot;jhjk&quot; &quot;bnkm&quot; &quot;76778&quot; &quot;76889&quot;(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College1_Branch.feature:33)
+</pre></div><a href='#' onClick='toggleBox("stack-trace197411228", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace197411228'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=124.0.6367.61)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f556026a5996b2363f8140bb0913e400, clickElement {id=f.C0E64AD947F7FF20866C745F523CFD56.d.CD7FBF3D028BB7C7E9997D5F610F4B17.e.89}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\dinesh\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50661}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50661/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f556026a5996b2363f8140bb0913e400)] -&gt; xpath: /html/body/div/div/div[1]/div[2]/div[2]/div/form/div[1]/label/span/div]
+Session ID: f556026a5996b2363f8140bb0913e400
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at Modules.BranchFields.uploadImage(BranchFields.java:49)
+	at stepDefinitions.BranchModule.enter_the_all_credentials_like1(BranchModule.java:144)
+	at ✽.Enter the all credentials like &quot;afdd&quot; &quot;gds231&quot; &quot;fda@gamil.com&quot; &quot;89900&quot; &quot;78789&quot; &quot;12345&quot; &quot;iuhj&quot; &quot;jbnn&quot; &quot;jhjk&quot; &quot;bnkm&quot; &quot;76778&quot; &quot;76889&quot;(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College1_Branch.feature:33)
+</pre></div></td>
+<td>16</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario - Valid From and Invalid To input", "Academic Modules"</td>
+<td><div><pre>java.lang.Exception: To Validation Must
+	at stepDefinitions.AcademicModule.if_the_data_is_present_throw_error(AcademicModule.java:111)
+	at ✽.If the data is present throw error.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College5_Academic.feature:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2045708211", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2045708211'><pre>java.lang.Exception: To Validation Must
+	at stepDefinitions.AcademicModule.if_the_data_is_present_throw_error(AcademicModule.java:111)
+	at ✽.If the data is present throw error.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College5_Academic.feature:21)
+</pre></div></td>
+<td>20</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario3 in Email,Mobile,Pincode Fields", "College - Faculty Module"</td>
+<td><div><pre>java.lang.Exception: BugException
+	at stepDefinitions.FacultyModule.it_need_to_shows_error_message(FacultyModule.java:176)
+	at ✽.It need to shows error message.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College3_Faculty.feature:40)
+</pre></div><a href='#' onClick='toggleBox("stack-trace941245447", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace941245447'><pre>java.lang.Exception: BugException
+	at stepDefinitions.FacultyModule.it_need_to_shows_error_message(FacultyModule.java:176)
+	at ✽.It need to shows error message.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College3_Faculty.feature:40)
+</pre></div></td>
+<td>18</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Without enter anything click submit and add", "Academic Modules"</td>
+<td><div><pre>java.lang.Exception: It created one data
+	at stepDefinitions.AcademicModule.click_the_submit_and_add_button(AcademicModule.java:236)
+	at ✽.Click the submit and add button.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College5_Academic.feature:41)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1201199367", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1201199367'><pre>java.lang.Exception: It created one data
+	at stepDefinitions.AcademicModule.click_the_submit_and_add_button(AcademicModule.java:236)
+	at ✽.Click the submit and add button.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College5_Academic.feature:41)
+</pre></div></td>
+<td>5</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit Scenario - Value present or not", "Course Module"</td>
+<td><div><pre>java.lang.Exception: Keyword Showing wrong
+	at stepDefinitions.CourseModule.check_all_values_showing_or_not(CourseModule.java:124)
+	at ✽.Check all values showing or not.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College6_Course.feature:32)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1272912830", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1272912830'><pre>java.lang.Exception: Keyword Showing wrong
+	at stepDefinitions.CourseModule.check_all_values_showing_or_not(CourseModule.java:124)
+	at ✽.Check all values showing or not.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College6_Course.feature:32)
+</pre></div></td>
+<td>6</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario2 - In email id and mobile number and cloud also do negative scenarios values check how it behaves.", "Branch Module"</td>
+<td><div><pre>java.lang.Exception: BugException
+	at stepDefinitions.BranchModule.it_need_to_show_error_message(BranchModule.java:195)
+	at ✽.It need to show error message.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College1_Branch.feature:45)
+</pre></div><a href='#' onClick='toggleBox("stack-trace540134098", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace540134098'><pre>java.lang.Exception: BugException
+	at stepDefinitions.BranchModule.it_need_to_show_error_message(BranchModule.java:195)
+	at ✽.It need to show error message.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College1_Branch.feature:45)
+</pre></div></td>
+<td>17</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario1 for Branch Module", "College - Subject Module"</td>
+<td><div><pre>java.lang.Exception: Error Message didn&apos;t show
+	at stepDefinitions.SubjectModule.error_message_showing_or_not_in_subject_page(SubjectModule.java:85)
+	at ✽.Error Message showing or not in subject page.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College4_Subject.feature:16)
+</pre></div><a href='#' onClick='toggleBox("stack-trace119487802", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace119487802'><pre>java.lang.Exception: Error Message didn&apos;t show
+	at stepDefinitions.SubjectModule.error_message_showing_or_not_in_subject_page(SubjectModule.java:85)
+	at ✽.Error Message showing or not in subject page.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College4_Subject.feature:16)
+</pre></div></td>
+<td>6</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Without enter anything click submit and add button in exam", "College - Exam"</td>
+<td><div><pre>java.lang.AssertionError: expected [Enter the credentials] but found [Exam ID is already exist]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.ExamModule.check_how_it_behave_in_exam_page_whether_it_shows_error_message_or_not(ExamModule.java:125)
+	at ✽.Check how it behave in exam page whether it shows error message or not.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College12_Exam.feature:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1369874063", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1369874063'><pre>java.lang.AssertionError: expected [Enter the credentials] but found [Exam ID is already exist]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.ExamModule.check_how_it_behave_in_exam_page_whether_it_shows_error_message_or_not(ExamModule.java:125)
+	at ✽.Check how it behave in exam page whether it shows error message or not.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College12_Exam.feature:19)
+</pre></div></td>
+<td>5</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Testcase - In Edit - Mobile no field enter the negative value and how its behave", "HomePage Scenarios"</td>
+<td><div><pre>java.lang.AssertionError: expected [Invalid Mobile Number] but found [Profile updated successfully]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.HomePageDefinitions.click_submit_icon_if_its_allow_there_is_a_bug(HomePageDefinitions.java:146)
+	at ✽.Click Submit icon  if its allow there is a bug.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College_HomePage.feature:22)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1463361810", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1463361810'><pre>java.lang.AssertionError: expected [Invalid Mobile Number] but found [Profile updated successfully]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.HomePageDefinitions.click_submit_icon_if_its_allow_there_is_a_bug(HomePageDefinitions.java:146)
+	at ✽.Click Submit icon  if its allow there is a bug.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College_HomePage.feature:22)
+</pre></div></td>
+<td>7</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search module in support page", "College - Support Module"</td>
+<td><div><pre>java.lang.Exception: Searcch Box didn&apos;t Work
+	at stepDefinitions.SupportModule.check_all_words_contains_v_char_in_support(SupportModule.java:140)
+	at ✽.Check All words contains V char in support.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College11_Support.feature:34)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1705173326", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1705173326'><pre>java.lang.Exception: Searcch Box didn&apos;t Work
+	at stepDefinitions.SupportModule.check_all_words_contains_v_char_in_support(SupportModule.java:140)
+	at ✽.Check All words contains V char in support.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College11_Support.feature:34)
+</pre></div></td>
+<td>4</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Without enter anything some data is present refresh the page", "College - Admin Module"</td>
+<td><div><pre>java.lang.Exception: Values Overriding
+	at stepDefinitions.AdminModule.refresh_the_page_and_check(AdminModule.java:116)
+	at ✽.Refresh the page and check.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College10_Admin.feature:23)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1094528209", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1094528209'><pre>java.lang.Exception: Values Overriding
+	at stepDefinitions.AdminModule.refresh_the_page_and_check(AdminModule.java:116)
+	at ✽.Refresh the page and check.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College10_Admin.feature:23)
+</pre></div></td>
+<td>5</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Without enter anything click submit and add button in support", "College - Support Module"</td>
+<td><div><pre>java.lang.AssertionError: expected [Enter the credentials] but found [please upload the student data]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.SupportModule.check_how_it_behave_in_support_page_whether_it_shows_error_message_or_not(SupportModule.java:95)
+	at ✽.Check how it behave in support page whether it shows error message or not.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College11_Support.feature:20)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1479645341", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1479645341'><pre>java.lang.AssertionError: expected [Enter the credentials] but found [please upload the student data]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.SupportModule.check_how_it_behave_in_support_page_whether_it_shows_error_message_or_not(SupportModule.java:95)
+	at ✽.Check how it behave in support page whether it shows error message or not.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College11_Support.feature:20)
+</pre></div></td>
+<td>5</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enter the different valid crendials but enter the previous credentials in admission id", "College - Student Module"</td>
+<td><div><pre>java.lang.Exception: Admission ID Validation Must
+	at stepDefinitions.StudentModule.check_error_message_showing_or_not_like_admission_id_already_exists(StudentModule.java:147)
+	at ✽.Check error message showing or not like admission id already exists(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College8_Student.feature:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1641823536", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1641823536'><pre>java.lang.Exception: Admission ID Validation Must
+	at stepDefinitions.StudentModule.check_error_message_showing_or_not_like_admission_id_already_exists(StudentModule.java:147)
+	at ✽.Check error message showing or not like admission id already exists(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College8_Student.feature:29)
+</pre></div></td>
+<td>29</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enter mantatory fields only in exam", "College - Exam"</td>
+<td><div><pre>java.lang.Exception: Without date how can we schedule the exam?
+	at stepDefinitions.ExamModule.check_its_created_or_not_in_exam_page(ExamModule.java:282)
+	at ✽.Check its created or not in exam page.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College12_Exam.feature:49)
+</pre></div><a href='#' onClick='toggleBox("stack-trace861720625", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace861720625'><pre>java.lang.Exception: Without date how can we schedule the exam?
+	at stepDefinitions.ExamModule.check_its_created_or_not_in_exam_page(ExamModule.java:282)
+	at ✽.Check its created or not in exam page.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College12_Exam.feature:49)
+</pre></div></td>
+<td>8</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario1 - Exam Module", "College - Exam"</td>
+<td><div><pre>java.lang.Exception: Submit and add button didn&apos;t work properly
+	at stepDefinitions.ExamModule.click_submit_and_add_icon_and_check_how_it_behave(ExamModule.java:251)
+	at ✽.Click submit and add icon and check how it behave.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College12_Exam.feature:39)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1358286427", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1358286427'><pre>java.lang.Exception: Submit and add button didn&apos;t work properly
+	at stepDefinitions.ExamModule.click_submit_and_add_icon_and_check_how_it_behave(ExamModule.java:251)
+	at ✽.Click submit and add icon and check how it behave.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College12_Exam.feature:39)
+</pre></div></td>
+<td>13</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click the profile icon and check all the data is present or not.", "HomePage Scenarios"</td>
+<td><div><pre>java.lang.Exception: All VAlues didn&apos;t shows
+	at stepDefinitions.HomePageDefinitions.check_all_values_showing_or_not_in_profile_view(HomePageDefinitions.java:173)
+	at ✽.Check all values showing or not in profile view.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College_HomePage.feature:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace152310176", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace152310176'><pre>java.lang.Exception: All VAlues didn&apos;t shows
+	at stepDefinitions.HomePageDefinitions.check_all_values_showing_or_not_in_profile_view(HomePageDefinitions.java:173)
+	at ✽.Check all values showing or not in profile view.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College_HomePage.feature:31)
+</pre></div></td>
+<td>4</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit - Admin", "College - Admin Module"</td>
+<td><div><pre>java.lang.Exception: Passqord values didn&apos;t shows
+	at stepDefinitions.AdminModule.check_all_values_are_present_in_admin(AdminModule.java:198)
+	at ✽.Check all values are present in admin(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College10_Admin.feature:54)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1658745835", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1658745835'><pre>java.lang.Exception: Passqord values didn&apos;t shows
+	at stepDefinitions.AdminModule.check_all_values_are_present_in_admin(AdminModule.java:198)
+	at ✽.Check all values are present in admin(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College10_Admin.feature:54)
+</pre></div></td>
+<td>5</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit - Check all value is present or not", "Branch Module"</td>
+<td><div><pre>java.lang.AssertionError: expected [iuvvs] but found [ga]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.BranchModule1.check_the_values_present_in_all_fields(BranchModule1.java:53)
+	at ✽.Check the values present in all fields.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College2_Branch1.feature:18)
+</pre></div><a href='#' onClick='toggleBox("stack-trace583910264", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace583910264'><pre>java.lang.AssertionError: expected [iuvvs] but found [ga]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.BranchModule1.check_the_values_present_in_all_fields(BranchModule1.java:53)
+	at ✽.Check the values present in all fields.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College2_Branch1.feature:18)
+</pre></div></td>
+<td>5</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario3 - Enter a negativve value in Section ID Fields", "College - Section Module"</td>
+<td><div><pre>java.lang.Exception: Negative Values allow in section ID fields
+	at stepDefinitions.SectionModule.check_the_if_the_data_is_present_throw_bugs(SectionModule.java:163)
+	at ✽.Check the if the data is present throw bugs.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College7_Secyion.feature:41)
+</pre></div><a href='#' onClick='toggleBox("stack-trace370667810", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace370667810'><pre>java.lang.Exception: Negative Values allow in section ID fields
+	at stepDefinitions.SectionModule.check_the_if_the_data_is_present_throw_bugs(SectionModule.java:163)
+	at ✽.Check the if the data is present throw bugs.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College7_Secyion.feature:41)
+</pre></div></td>
+<td>10</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario1 for section module - Enter all credentials previously what we entered", "College - Section Module"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;Section ID is already exist&apos;]&quot;}
+  (Session info: chrome=124.0.6367.61)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [63363f3a5b2b4fcc7b389c73abfd579a, findElement {using=xpath, value=//div[text()=&apos;Section ID is already exist&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\dinesh\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52593}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52593/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63363f3a5b2b4fcc7b389c73abfd579a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at stepDefinitions.SectionModule.error_message_showing_or_not_in_section_menu(SectionModule.java:113)
+	at ✽.Error Message showing or not in section menu.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College7_Secyion.feature:28)
+</pre></div><a href='#' onClick='toggleBox("stack-trace383346659", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace383346659'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;Section ID is already exist&apos;]&quot;}
+  (Session info: chrome=124.0.6367.61)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [63363f3a5b2b4fcc7b389c73abfd579a, findElement {using=xpath, value=//div[text()=&apos;Section ID is already exist&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\dinesh\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52593}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52593/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63363f3a5b2b4fcc7b389c73abfd579a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at stepDefinitions.SectionModule.error_message_showing_or_not_in_section_menu(SectionModule.java:113)
+	at ✽.Error Message showing or not in section menu.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College7_Secyion.feature:28)
+</pre></div></td>
+<td>29</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario - Exam Module", "College - Exam"</td>
+<td><div><pre>java.lang.Exception: Existing Time and date doesn&apos;t want to shows
+	at stepDefinitions.ExamModule.throw_errors(ExamModule.java:221)
+	at ✽.Throw Errors.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College12_Exam.feature:34)
+</pre></div><a href='#' onClick='toggleBox("stack-trace501674653", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace501674653'><pre>java.lang.Exception: Existing Time and date doesn&apos;t want to shows
+	at stepDefinitions.ExamModule.throw_errors(ExamModule.java:221)
+	at ✽.Throw Errors.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College12_Exam.feature:34)
+</pre></div></td>
+<td>13</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Upload a big mb videos in doc how it behaves.", "College - Support Module"</td>
+<td><div><pre>java.lang.Exception: Set limit video mb
+	at stepDefinitions.SupportModule.check_whether_the_videos_has_been_upload_oe_not(SupportModule.java:131)
+	at ✽.Check whether the videos has been upload oe not.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College11_Support.feature:30)
+</pre></div><a href='#' onClick='toggleBox("stack-trace645188232", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace645188232'><pre>java.lang.Exception: Set limit video mb
+	at stepDefinitions.SupportModule.check_whether_the_videos_has_been_upload_oe_not(SupportModule.java:131)
+	at ✽.Check whether the videos has been upload oe not.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College11_Support.feature:30)
+</pre></div></td>
+<td>16</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario2 in Date Fields", "College - Faculty Module"</td>
+<td><div><pre>java.lang.Exception: DateValidationMustInDOB
+	at stepDefinitions.FacultyModule.check_the_condition_is_true_or_false(FacultyModule.java:166)
+	at ✽.Check the condition is True or False.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College3_Faculty.feature:34)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1821353651", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1821353651'><pre>java.lang.Exception: DateValidationMustInDOB
+	at stepDefinitions.FacultyModule.check_the_condition_is_true_or_false(FacultyModule.java:166)
+	at ✽.Check the condition is True or False.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College3_Faculty.feature:34)
+</pre></div></td>
+<td>19</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Sceanrio2 User can able to clear the ID data or not.", "College - Section Module"</td>
+<td><div><pre>java.lang.Exception: User can able to clear ID data in Section
+	at stepDefinitions.SectionModule.check_it_allow_or_not_in_section_menu(SectionModule.java:131)
+	at ✽.Check it allow or not in section menu.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College7_Secyion.feature:35)
+</pre></div><a href='#' onClick='toggleBox("stack-trace557585920", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace557585920'><pre>java.lang.Exception: User can able to clear ID data in Section
+	at stepDefinitions.SectionModule.check_it_allow_or_not_in_section_menu(SectionModule.java:131)
+	at ✽.Check it allow or not in section menu.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College7_Secyion.feature:35)
+</pre></div></td>
+<td>10</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Scenario - Add two data simutaneously by using submit and add button.", "Branch Module"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=124.0.6367.61)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1afb920afdf99db8296b28cf409ba88b, clickElement {id=f.6D0BEC7700AE33B001CFB83F50D30AF3.d.9BBFF814243E5AA19E077659E01937DE.e.82}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\dinesh\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50614}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50614/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1afb920afdf99db8296b28cf409ba88b)] -&gt; xpath: /html/body/div/div/div[1]/div[2]/div[2]/div/form/div[1]/label/span/div]
+Session ID: 1afb920afdf99db8296b28cf409ba88b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at Modules.BranchFields.uploadImage(BranchFields.java:49)
+	at stepDefinitions.BranchModule.enter_the_all_credentials_like1(BranchModule.java:144)
+	at ✽.Enter the all credentials like &quot;dsds&quot; &quot;faa1411&quot; &quot;fa@gamil.com&quot; &quot;243131&quot; &quot;4352&quot; &quot;12345&quot; &quot;dfbdbd&quot; &quot;fdsfbdfs&quot; &quot;iokhjkj&quot; &quot;hghvbjj&quot; &quot;789&quot; &quot;0998&quot;(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College1_Branch.feature:33)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1741966057", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1741966057'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=124.0.6367.61)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1afb920afdf99db8296b28cf409ba88b, clickElement {id=f.6D0BEC7700AE33B001CFB83F50D30AF3.d.9BBFF814243E5AA19E077659E01937DE.e.82}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\dinesh\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50614}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50614/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1afb920afdf99db8296b28cf409ba88b)] -&gt; xpath: /html/body/div/div/div[1]/div[2]/div[2]/div/form/div[1]/label/span/div]
+Session ID: 1afb920afdf99db8296b28cf409ba88b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at Modules.BranchFields.uploadImage(BranchFields.java:49)
+	at stepDefinitions.BranchModule.enter_the_all_credentials_like1(BranchModule.java:144)
+	at ✽.Enter the all credentials like &quot;dsds&quot; &quot;faa1411&quot; &quot;fa@gamil.com&quot; &quot;243131&quot; &quot;4352&quot; &quot;12345&quot; &quot;dfbdbd&quot; &quot;fdsfbdfs&quot; &quot;iokhjkj&quot; &quot;hghvbjj&quot; &quot;789&quot; &quot;0998&quot;(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College1_Branch.feature:33)
+</pre></div></td>
+<td>16</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Scenario - Add a new branch and check created date and time", "Branch Module"</td>
+<td><div><pre>java.lang.AssertionError: expected [22/04/2024] but found [29/03/2024]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.BranchModule.check_the_created_date_and_time(BranchModule.java:123)
+	at ✽.Check the created date and time.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College1_Branch.feature:22)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1332929420", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1332929420'><pre>java.lang.AssertionError: expected [22/04/2024] but found [29/03/2024]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.BranchModule.check_the_created_date_and_time(BranchModule.java:123)
+	at ✽.Check the created date and time.(file:///C:/Users/dinesh/eclipse-workspace/Colleges/src/test/java/features/College1_Branch.feature:22)
+</pre></div></td>
+<td>17</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Without enter anything click submit button in exam", "College - Exam"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete some faculty", "College - Subject Module"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Without enter anything in section page and then click submit button", "College - Section Module"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Sceanrio - Admin - Click  Option", "College - Admin Module"</td>
+<td></td>
+<td>14</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Scenario - Admin Module", "College - Admin Module"</td>
+<td></td>
+<td>18</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario - Enter the existing data", "Course Module"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Postive Scenario - Search some char in faculty search box and check it contains this char", "College - Faculty Module"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Scenario - Edit", "Academic Modules"</td>
+<td></td>
+<td>7</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Scenario - File Upload", "College - Exam"</td>
+<td></td>
+<td>21</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario - Search irrelevant char and check how its behave in course", "Course Module"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario in mark fields.", "College - Exam"</td>
+<td></td>
+<td>8</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete Some Faculty", "College - Faculty Module"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit Scenario", "Course Module"</td>
+<td></td>
+<td>7</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit Scenario", "College - Section Module"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enter the value in mandatory fields", "College - Student Module"</td>
+<td></td>
+<td>24</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit the institute name and verify the value has been change in homepage", "HomePage Scenarios"</td>
+<td></td>
+<td>9</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Without enter anything click submit button in support", "College - Support Module"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Without enter anything click submit button and check how it behave", "Course Module"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Postive Scenario - Search some char in course search box and check it contains this char in sec menu", "College - Section Module"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Sceanrio - Admin - Click  Option", "College - Admin Module"</td>
+<td></td>
+<td>13</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario for Section Module", "College - Section Module"</td>
+<td></td>
+<td>9</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Sceanrio - Missing one mandatory fields.", "Course Module"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Sceanrio for Faculty Module", "College - Faculty Module"</td>
+<td></td>
+<td>19</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Sceanrio - Admin - Click  Option", "College - Admin Module"</td>
+<td></td>
+<td>14</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Scenario for subject module.", "College - Subject Module"</td>
+<td></td>
+<td>7</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit Scenario - Value present or not", "College - Section Module"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Postive Scenario - Search some char in course search box and check it contains this char in sec menu", "College - Student Module"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario Search irrelevant char and check how it behave", "Branch Module"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click the view icon and check", "College - Student Module"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Postive Scenario - Search some char in course search box and check it contains this char", "Course Module"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete some section", "College - Student Module"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Scenario - Course Module", "Course Module"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Without Enter anything click submit icon and check how its behave", "Branch Module"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the month and year is shows correctly", "HomePage Scenarios"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Sceanrio - Admin - Click Delete Option", "College - Admin Module"</td>
+<td></td>
+<td>12</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario1 for Branch Module", "Branch Module"</td>
+<td></td>
+<td>17</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario - Search irrelevant char and check how its behave", "College - Faculty Module"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit Scenario - Student", "College - Student Module"</td>
+<td></td>
+<td>8</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Scenario for Branch Module", "Branch Module"</td>
+<td></td>
+<td>18</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Testcase1 - Edit - Clear the all data and check how it behave", "HomePage Scenarios"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Without Enter anything click submit icon and check how its behave", "College - Faculty Module"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Clear the ID and check how it behaves", "College - Student Module"</td>
+<td></td>
+<td>22</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Scenario for Login Module", "College - Student Module"</td>
+<td></td>
+<td>31</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Scenario - Support Module", "College - Support Module"</td>
+<td></td>
+<td>18</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Without enter anything click submit button in admin", "College - Admin Module"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Without enter anything click submit icon", "Academic Modules"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit some values and check how its behave", "College - Subject Module"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Sceanrio - Admin - Click Edit Option", "College - Admin Module"</td>
+<td></td>
+<td>12</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Without enter anything and check how it behave.", "College - Subject Module"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Scenario - Exam Link", "College - Exam"</td>
+<td></td>
+<td>15</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Scenario for exam module", "College - Exam"</td>
+<td></td>
+<td>15</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete the branch", "Branch Module"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search some valid Faculty", "College - Subject Module"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search some invalid Faculty", "College - Subject Module"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Scenario - Search some char in search box and check how its behave", "Branch Module"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Postive Sceanrio for Academic Module", "Academic Modules"</td>
+<td></td>
+<td>18</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario - Search irrelevant char and check how its behave in course in sec", "College - Section Module"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Module", "College - Section Module"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enter the same credentials what we entered in previous cases", "College - Student Module"</td>
+<td></td>
+<td>31</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Scenario - Edit - Check Branch ID is editable or not", "Branch Module"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit - Some Faculty", "College - Faculty Module"</td>
+<td></td>
+<td>7</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario1 for Faculty Module", "College - Faculty Module"</td>
+<td></td>
+<td>18</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Postive Scenario - Search some char in exam search box and check it contains this char in sec menu", "College - Exam"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario Search irrelevant char and check how it behave", "College - Exam"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Without enter anything check how its behave", "College - Student Module"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Sceanrio - Admin - Click Add Option", "College - Admin Module"</td>
+<td></td>
+<td>13</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Exisiting data entered and then click submit", "College - Exam"</td>
+<td></td>
+<td>16</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete the branch in exam module", "College - Exam"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Scenario for Secction Module", "College - Section Module"</td>
+<td></td>
+<td>28</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+<tr>
+<td title='runner.TestNGRunner2.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Negative Scenario - Search irrelevant char and check how its behave in course in sec", "College - Student Module"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestNGRunner2@7817fd62</td></tr>
+</table><p>
+</body>
+</html>
