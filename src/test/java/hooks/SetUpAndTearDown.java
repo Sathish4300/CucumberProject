@@ -37,8 +37,8 @@ public class SetUpAndTearDown {
 		context.driver.get(url);
 		context.driver.manage().window().maximize();
 		context.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		context.driver.findElement(By.xpath("//input[@type='email']")).sendKeys("dummy@gmail.com");
-		context.driver.findElement(By.xpath("//input[@type='password']")).sendKeys("12345");
+		context.driver.findElement(By.xpath("//input[@type='email']")).sendKeys("");
+		context.driver.findElement(By.xpath("//input[@type='password']")).sendKeys("");
 		context.driver.findElement(By.xpath("//button[text()='Login']")).click();
 	}
 	
